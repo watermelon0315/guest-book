@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자기소개 페이지</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>자기소개 페이지</h1>
+        <div id="intro">
+            <!-- 이미지를 표시하는 img 태그 -->
+            <img src="icoos1.jpg" alt="Profile Picture">
+            <h2>이름: 정소연</h2>
+            <p>소속: 광운대학교 경영학과</p>
+            <p>취미: 잠자기, 산책하기</p>
+        </div>
+        <div id="guestbook">
+            <h2>방명록</h2>
+            <form id="guestbook-form">
+                <input type="text" id="author" placeholder="작성자" required>
+                <textarea id="content" placeholder="내용" required></textarea>
+                <button type="submit">방명록 남기기</button>
+            </form>
+            <div id="guestbook-entries">
+                <!-- 방명록 항목들이 여기에 추가됩니다 -->
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

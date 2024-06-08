@@ -1,0 +1,41 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+}
+
+#intro img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+#guestbook {
+    margin-top: 20px;
+}
+
+#guestbook-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#guestbook-form input,
+#guestbook-form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+#guestbook-entries {
+    margin-top: 20px;
+}
+
+.guestbook-entry {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
