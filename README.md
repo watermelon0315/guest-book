@@ -9,27 +9,29 @@
    git clone https://github.com/watermelon/guest-book.git
    cd guest-book
 2. 가상환경 설정 및 패키지 설치
+   ```bash
    python3 -m venv myenv
    source myenv/bin/activate
    pip install -r requirements.txt
-3. 서버 실행
+4. 서버 실행
+   ```bash
    uvicorn main:app --host 0.0.0.0 --port 8000
    
 
 ## API 엔드포인트
 
-GET /: 자기소개 페이지
-POST /guestbook: 방명록 작성
-GET /guestbook: 방명록 목록 조회
-DELETE /guestbook/{entry_id}: 방명록 항목 삭제
+- GET /: 자기소개 페이지
+- POST /guestbook: 방명록 작성
+- GET /guestbook: 방명록 목록 조회
+- DELETE /guestbook/{entry_id}: 방명록 항목 삭제
 
 ## 사용된 오픈 소스 라이브러리
-FastAPI
-Uvicorn
+- FastAPI
+- Uvicorn
 
 ## 배포 링크
 AWS에서 배포된 서비스 링크: http://100.28.146.73:8000/
 
 ## 학번 / 이름
-학번: 2020508069
-이름: 정소연
+- 학번: 2020508069
+- 이름: 정소연
