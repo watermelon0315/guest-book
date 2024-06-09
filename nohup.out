@@ -1,0 +1,275 @@
+Traceback (most recent call last):
+  File "/home/ec2-user/guest-book/myenv/bin/uvicorn", line 8, in <module>
+    sys.exit(main())
+  File "/home/ec2-user/guest-book/myenv/lib64/python3.7/site-packages/click/core.py", line 1157, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/ec2-user/guest-book/myenv/lib64/python3.7/site-packages/click/core.py", line 1078, in main
+    rv = self.invoke(ctx)
+  File "/home/ec2-user/guest-book/myenv/lib64/python3.7/site-packages/click/core.py", line 1434, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/ec2-user/guest-book/myenv/lib64/python3.7/site-packages/click/core.py", line 783, in invoke
+    return __callback(*args, **kwargs)
+  File "/home/ec2-user/guest-book/myenv/lib64/python3.7/site-packages/uvicorn/main.py", line 456, in main
+    h11_max_incomplete_event_size=h11_max_incomplete_event_size,
+  File "/home/ec2-user/guest-book/myenv/lib64/python3.7/site-packages/uvicorn/main.py", line 578, in run
+    server.run()
+  File "/home/ec2-user/guest-book/myenv/lib64/python3.7/site-packages/uvicorn/server.py", line 61, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "/usr/lib64/python3.7/asyncio/runners.py", line 43, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib64/python3.7/asyncio/base_events.py", line 587, in run_until_complete
+    return future.result()
+  File "/home/ec2-user/guest-book/myenv/lib64/python3.7/site-packages/uvicorn/server.py", line 68, in serve
+    config.load()
+  File "/home/ec2-user/guest-book/myenv/lib64/python3.7/site-packages/uvicorn/config.py", line 473, in load
+    self.loaded_app = import_from_string(self.app)
+  File "/home/ec2-user/guest-book/myenv/lib64/python3.7/site-packages/uvicorn/importer.py", line 24, in import_from_string
+    raise exc from None
+  File "/home/ec2-user/guest-book/myenv/lib64/python3.7/site-packages/uvicorn/importer.py", line 21, in import_from_string
+    module = importlib.import_module(module_str)
+  File "/usr/lib64/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/ec2-user/guest-book/main.py", line 1, in <module>
+    from fastapi import FastAPI, HTTPException
+ModuleNotFoundError: No module named 'fastapi'
+Traceback (most recent call last):
+  File "/home/ec2-user/guest-book/myenv/bin/uvicorn", line 8, in <module>
+    sys.exit(main())
+  File "/home/ec2-user/guest-book/myenv/lib64/python3.7/site-packages/click/core.py", line 1157, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/ec2-user/guest-book/myenv/lib64/python3.7/site-packages/click/core.py", line 1078, in main
+    rv = self.invoke(ctx)
+  File "/home/ec2-user/guest-book/myenv/lib64/python3.7/site-packages/click/core.py", line 1434, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/ec2-user/guest-book/myenv/lib64/python3.7/site-packages/click/core.py", line 783, in invoke
+    return __callback(*args, **kwargs)
+  File "/home/ec2-user/guest-book/myenv/lib64/python3.7/site-packages/uvicorn/main.py", line 456, in main
+    h11_max_incomplete_event_size=h11_max_incomplete_event_size,
+  File "/home/ec2-user/guest-book/myenv/lib64/python3.7/site-packages/uvicorn/main.py", line 578, in run
+    server.run()
+  File "/home/ec2-user/guest-book/myenv/lib64/python3.7/site-packages/uvicorn/server.py", line 61, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "/usr/lib64/python3.7/asyncio/runners.py", line 43, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib64/python3.7/asyncio/base_events.py", line 587, in run_until_complete
+    return future.result()
+  File "/home/ec2-user/guest-book/myenv/lib64/python3.7/site-packages/uvicorn/server.py", line 68, in serve
+    config.load()
+  File "/home/ec2-user/guest-book/myenv/lib64/python3.7/site-packages/uvicorn/config.py", line 473, in load
+    self.loaded_app = import_from_string(self.app)
+  File "/home/ec2-user/guest-book/myenv/lib64/python3.7/site-packages/uvicorn/importer.py", line 24, in import_from_string
+    raise exc from None
+  File "/home/ec2-user/guest-book/myenv/lib64/python3.7/site-packages/uvicorn/importer.py", line 21, in import_from_string
+    module = importlib.import_module(module_str)
+  File "/usr/lib64/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/ec2-user/guest-book/main.py", line 1, in <module>
+    from fastapi import FastAPI, HTTPException
+ModuleNotFoundError: No module named 'fastapi'
+INFO:     Started server process [30548]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+ERROR:    [Errno 98] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Started server process [30558]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     221.133.146.209:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     221.133.146.209:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     Started server process [30575]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started server process [30591]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     122.96.28.7:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     118.212.122.209:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     Started server process [30617]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+ERROR:    [Errno 98] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Started server process [30697]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [30697]
+INFO:     Started server process [30729]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started server process [30790]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+ERROR:    [Errno 98] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Started server process [30793]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+ERROR:    [Errno 98] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Started server process [31124]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+ERROR:    [Errno 98] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Started server process [3282]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started server process [3347]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+ERROR:    [Errno 98] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Started server process [3366]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started server process [3442]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started server process [3446]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+ERROR:    [Errno 98] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Started server process [3244]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [3244]
+INFO:     Started server process [3277]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     221.133.146.209:49186 - "GET / HTTP/1.1" 404 Not Found
+INFO:     221.133.146.209:49186 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [3277]
+INFO:     Started server process [3390]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     221.133.146.209:49309 - "GET / HTTP/1.1" 200 OK
+INFO:     221.133.146.209:49318 - "GET /guestbook HTTP/1.1" 200 OK
+INFO:     100.28.146.73:36746 - "POST /guestbook HTTP/1.1" 200 OK
+INFO:     100.28.146.73:39222 - "POST /guestbook HTTP/1.1" 200 OK
+INFO:     100.28.146.73:39224 - "GET /guestbook HTTP/1.1" 200 OK
+INFO:     100.28.146.73:51070 - "DELETE /guestbook/1 HTTP/1.1" 200 OK
+INFO:     100.28.146.73:56872 - "GET /guestbook HTTP/1.1" 200 OK
+INFO:     221.133.146.209:49671 - "GET / HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [3390]
+Traceback (most recent call last):
+  File "/home/ec2-user/guest-book/myenv/bin/uvicorn", line 8, in <module>
+    sys.exit(main())
+  File "/home/ec2-user/guest-book/myenv/lib64/python3.7/site-packages/click/core.py", line 1157, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/ec2-user/guest-book/myenv/lib64/python3.7/site-packages/click/core.py", line 1078, in main
+    rv = self.invoke(ctx)
+  File "/home/ec2-user/guest-book/myenv/lib64/python3.7/site-packages/click/core.py", line 1434, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/ec2-user/guest-book/myenv/lib64/python3.7/site-packages/click/core.py", line 783, in invoke
+    return __callback(*args, **kwargs)
+  File "/home/ec2-user/guest-book/myenv/lib64/python3.7/site-packages/uvicorn/main.py", line 456, in main
+    h11_max_incomplete_event_size=h11_max_incomplete_event_size,
+  File "/home/ec2-user/guest-book/myenv/lib64/python3.7/site-packages/uvicorn/main.py", line 578, in run
+    server.run()
+  File "/home/ec2-user/guest-book/myenv/lib64/python3.7/site-packages/uvicorn/server.py", line 61, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "/usr/lib64/python3.7/asyncio/runners.py", line 43, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib64/python3.7/asyncio/base_events.py", line 587, in run_until_complete
+    return future.result()
+  File "/home/ec2-user/guest-book/myenv/lib64/python3.7/site-packages/uvicorn/server.py", line 68, in serve
+    config.load()
+  File "/home/ec2-user/guest-book/myenv/lib64/python3.7/site-packages/uvicorn/config.py", line 473, in load
+    self.loaded_app = import_from_string(self.app)
+  File "/home/ec2-user/guest-book/myenv/lib64/python3.7/site-packages/uvicorn/importer.py", line 21, in import_from_string
+    module = importlib.import_module(module_str)
+  File "/usr/lib64/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/ec2-user/guest-book/main.py", line 44, in <module>
+    @app.get("/", response_class=HTMLResponse)
+NameError: name 'HTMLResponse' is not defined
+INFO:     Started server process [3476]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [3476]
+INFO:     Started server process [3488]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     221.133.146.209:49956 - "GET / HTTP/1.1" 200 OK
+INFO:     221.133.146.209:49956 - "GET /styles.css HTTP/1.1" 404 Not Found
+INFO:     221.133.146.209:49957 - "GET /icoos1.jpg HTTP/1.1" 404 Not Found
+INFO:     221.133.146.209:49959 - "GET /app.js HTTP/1.1" 404 Not Found
+INFO:     221.133.146.209:49992 - "GET /styles.css HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     221.133.146.209:50351 - "GET / HTTP/1.1" 200 OK
+INFO:     221.133.146.209:50350 - "GET /styles.css HTTP/1.1" 404 Not Found
+INFO:     221.133.146.209:50351 - "GET /icoos1.jpg HTTP/1.1" 200 OK
+INFO:     221.133.146.209:50350 - "GET /app.js HTTP/1.1" 404 Not Found
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [3488]
+INFO:     Started server process [3581]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     221.133.146.209:50475 - "GET / HTTP/1.1" 200 OK
+INFO:     221.133.146.209:50475 - "GET /styles.css HTTP/1.1" 200 OK
+INFO:     221.133.146.209:50474 - "GET /app.js HTTP/1.1" 200 OK
+INFO:     221.133.146.209:50474 - "GET /guestbook HTTP/1.1" 200 OK
+INFO:     221.133.146.209:50489 - "GET / HTTP/1.1" 200 OK
+INFO:     221.133.146.209:50489 - "GET /guestbook HTTP/1.1" 200 OK
+INFO:     221.133.146.209:50535 - "POST /guestbook HTTP/1.1" 200 OK
+INFO:     221.133.146.209:50535 - "DELETE /guestbook/1 HTTP/1.1" 200 OK
+INFO:     221.133.146.209:50535 - "GET / HTTP/1.1" 200 OK
+INFO:     221.133.146.209:50535 - "GET /guestbook HTTP/1.1" 200 OK
+./start_server.sh: line 1:  3581 Killed                  /home/ec2-user/guest-book/myenv/bin/uvicorn main:app --host 0.0.0.0 --port 8000
