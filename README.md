@@ -26,8 +26,9 @@
 - DELETE /guestbook/{entry_id}: 방명록 항목 삭제
 
 ## 사용된 오픈 소스 라이브러리
-- FastAPI
-- Uvicorn
+
+- [FastAPI](https://fastapi.tiangolo.com/)
+- [Uvicorn](https://www.uvicorn.org/)
 
 ## 배포 링크
 AWS에서 배포된 서비스 링크: http://100.28.146.73:8000/
